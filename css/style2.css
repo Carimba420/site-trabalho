@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+header {
+    background-color: #242424;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+nav {
+    padding: 10px;
+    margin-left: auto; 
+    height: auto;
+    max-width: 40%; 
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+nav::-webkit-scrollbar {
+    display: none; 
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.menu li {
+    margin: 0 15px;
+    white-space: nowrap; 
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 20px;
+}
+main a{
+    text-decoration: none;
+    color: white;
+}
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table tr td {
+    padding: 10px;
+}
+
+table tr td a img {
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+table tr td a img:hover {
+    transform: scale(1.15);
+    border-radius: 5%;
+}
+footer {
+    background-color: #242424;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 16px;
+}
+@media screen and (max-width: 1380px) {
+    header {
+        background-color: #242424;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header img {
+        width: 50px;
+        height: auto;
+        margin-left: 20px;
+    }
+    
+    nav {
+        margin-right: auto; 
+        max-width: 80%; 
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: auto; 
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+    
+    nav::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    .menu {
+        display: flex;
+        list-style: none;
+        background-color: #333;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    
+    .menu li {
+        margin: 0 15px;
+        white-space: nowrap; 
+    }
+    
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.25rem;
+        padding: 10px;
+    }
+    
+    .menu a:hover {
+        background-color: #555;
+        border-radius: 5px;
+    }
+    table {
+        width: 80%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+    
+    table tr td {
+        padding: 10px;
+    }
+    table tr td a img {
+        min-width: 265px;
+        min-height: 375px;
+        transition: 0.3s ease;
+    }
+    table tr td a img:hover {
+        transform: scale(1.15);
+        border-radius: 5%;
+    }
+    
+}
+@media screen and (max-width: 790px) {
+    header {
+        background-color: #242424;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header img {
+        width: 50px;
+        height: auto;
+        margin-left: 20px;
+    }
+    
+    nav {
+        margin-left: auto; 
+        height: 100%;
+        max-width: 80%; 
+        display: flex;
+        justify-content: space-between;
+        overflow-y: hidden;
+        overflow-x: auto; 
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+    
+    nav::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    .menu {
+        list-style: none;
+        background-color: #333;
+        padding: 10px 20px;
+        display: flex;
+        border-radius: 5px;
+    }
+    
+    .menu li {
+        margin: 0 15px;
+        white-space: nowrap; 
+    }
+    
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    .menu a:hover {
+        background-color: #555;
+        border-radius: 5px;
+    }
+    main h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    table {
+        width: 100%;
+        gap: 10px;
+    }
+    table tr td {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    table td img {
+        max-width: 80%; 
+        margin: 0 auto;
+    }
+}

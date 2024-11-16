@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+
+header {
+    background-color: #242424;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #aaa;
+}
+
+.menu {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+main {
+    padding: 20px;
+}
+main h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+table{
+    background-color: #333;
+    border-radius: 8px; 
+    width: 50%;
+    height: 50%;
+}
+table tr td {
+    padding: 8px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 26px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: #fff;
+}
+form table tr td button{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+}
+form table tr td button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+footer {
+    background-color: #242424;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+footer img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+footer p {
+    font-size: 16px;
+}
+@media screen and (max-width: 1120px) {
+    header {
+        background-color: #242424;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header img {
+        width: 50px;
+        height: auto;
+        margin-left: 20px;
+    }
+    
+    nav {
+        margin-left: auto; 
+        height: 100%;
+        max-width: 80%; 
+        display: flex;
+        justify-content: space-between;
+        overflow-y: hidden;
+        overflow-x: auto; 
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+    
+    nav::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    .menu {
+        list-style: none;
+        background-color: #333;
+        padding: 10px 20px;
+        display: flex;
+        border-radius: 5px;
+    }
+    
+    .menu li {
+        margin: 0 15px;
+        white-space: nowrap; 
+    }
+    
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    .menu a:hover {
+        background-color: #555;
+        border-radius: 5px;
+    }  
+}
+@media screen and (max-width: 790px) {
+    table{
+        background-color: #333;
+        border-radius: 8px; 
+        width: 360px;
+        height: 360px;
+    }
+}

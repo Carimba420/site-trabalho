@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+
+header {
+    background-color: #242424;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+nav {
+    margin-right: 20px;
+}
+.menu {
+    display: flex;
+    list-style: none;
+}
+.menu li {
+    margin: 0 15px;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+.menu a:hover {
+    color: #aaa;
+}
+.menu {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+.menu a:hover {
+    background-color: #555;
+}
+main {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+main h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+table {
+    width: 100%;
+    background-color: #242424;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+table .i {
+    width: 250px;
+    height: auto;   
+    transition: 0.3s;
+}
+
+table img.i:hover {
+    transform: scale(1.08);
+    border-radius: 8px;
+}
+table h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+table p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 5px 0;
+    color: #ffffff;
+}
+table td {
+    padding: 15px;
+    vertical-align: top;
+}
+footer {
+    background-color: #242424;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+footer p {
+    font-size: 16px;
+}
+@media screen and (max-width: 1120px) {
+    header {
+        background-color: #242424;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header img {
+        width: 50px;
+        height: auto;
+        margin-left: 20px;
+    }
+    
+    nav {
+        margin-left: auto; 
+        height: 100%;
+        max-width: 80%; 
+        display: flex;
+        justify-content: space-between;
+        overflow-y: hidden;
+        overflow-x: auto; 
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+    
+    nav::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    .menu {
+        list-style: none;
+        background-color: #333;
+        padding: 10px 20px;
+        display: flex;
+        border-radius: 5px;
+    }
+    
+    .menu li {
+        margin: 0 15px;
+        white-space: nowrap; 
+    }
+    
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    .menu a:hover {
+        background-color: #555;
+        border-radius: 5px;
+    }  
+}
+@media screen and (max-width: 790px) {
+    header {
+        background-color: #242424;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header img {
+        width: 50px;
+        height: auto;
+        margin-left: 20px;
+    }
+    
+    nav {
+        margin-left: auto; 
+        height: 100%;
+        max-width: 80%; 
+        display: flex;
+        justify-content: space-between;
+        overflow-y: hidden;
+        overflow-x: auto; 
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+    
+    nav::-webkit-scrollbar {
+        display: none; 
+    }
+    
+    .menu {
+        list-style: none;
+        background-color: #333;
+        padding: 10px 20px;
+        display: flex;
+        border-radius: 5px;
+    }
+    
+    .menu li {
+        margin: 0 15px;
+        white-space: nowrap; 
+    }
+    
+    .menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    .menu a:hover {
+        background-color: #555;
+        border-radius: 5px;
+    }
+    main h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    table {
+        width: 100%;
+        gap: 10px;
+    }
+    table tr td {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    table td img {
+        min-width: 265px;
+        min-height: 375px; 
+        margin: 0 auto;
+    }
+}
