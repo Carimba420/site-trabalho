@@ -9,19 +9,52 @@
 </head>
 <body>
     <header>
-        <img src="./img/J&J (1).png" alt="Logo">
         <nav>
-            <ul class="menu">
-                <li><a href="index.html">Pagina inicial</a></li>
-                <li><a href="#">Ficção</a></li>
-                <li><a href="#">Ação</a></li>
-                <li><a href="#">Comédia</a></li>
-                <li><a href="index5.html">Stopmotion</a></li>
-                <li><a href="index3.html">Atemporais</a></li>
-                <li class="login"><a href="login.html">Login</a></li>
-            </ul>
+            <div class="logo">
+                <img src="./img/J&J (1).png" alt="Logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Ficção</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Ação</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Comédia</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-link">Animação+</a>
+                        <div class="dropdown-menu">
+                            <a href="index3.html" class="nav-link">Atemporais</a>
+                            <a href="index4.html" class="nav-link">Anime</a>
+                            <a href="index5.html" class="nav-link">Stopmotion</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>               
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+            </div>               
         </nav>
-    </header>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Ficção</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Ação</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Comédia</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-link">Animação+</a>
+                    <div class="dropdown-menu">
+                        <a href="index3.html" class="nav-link">Atemporais</a>
+                        <a href="index4.html" class="nav-link">Anime</a>
+                        <a href="index5.html" class="nav-link">Stopmotion</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>  
     <main>
         <br>
         <h1>Lista de recomendação</h1>
@@ -34,6 +67,8 @@
                         <a href="https://www.youtube.com/watch?v=AMr5pXzpvP0" target="_blank">
                             <img src="./img/fate.jpg" alt="" class="i">
                         </a>
+                        <p><strong>Gênero:</strong> Ação, Fantasia, Drama</p>
+                        <p><strong>Disponível em:</strong> Amazon Prime Video.</p>
                     </td>
                     <td>
                         <h2>Notas</h2>
@@ -53,7 +88,6 @@
                     <td>
                         <h2>Review pessoal</h2>
                         <p>A trilogia Heaven’s Feel é a rota mais sombria da série Fate/stay night. Aqui, a história foca na Sakura, e o tom é bem mais pesado e trágico. É uma história cheia de dor, sacrifício e dilemas morais. A animação da Ufotable é absurda de tão boa, especialmente nas cenas de luta, que são espetaculares. Mas a história é bem densa e emocional, então se prepare pra algo mais pesado do que as outras rotas de Fate.
-
                         Ponto alto: Animação de cair o queixo e uma trama densa, cheia de emoções fortes.</p>
                     </td>    
                 </tr>
@@ -66,6 +100,8 @@
                         <a href="https://www.youtube.com/watch?v=Y9cXQfLdGfQ" target="_blank">
                             <img src="./img/evangelion.jpg" alt="" class="i">
                         </a>
+                        <p><strong>Gênero:</strong> Ficção Científica, Psicológico, Drama</p>
+                        <p><strong>Disponível em:</strong> Netflix.</p>
                     </td>
                     <td>
                         <h2>Notas</h2>
@@ -98,6 +134,8 @@
                         <a href="https://www.youtube.com/watch?v=4OiMOHRDs14&t=5s" target="_blank">
                             <img src="./img/mononoke.jpg" alt="" class="i">
                         </a>
+                        <p><strong>Gênero:</strong> Aventura, Fantasia, Drama</p>
+                        <p><strong>Disponível em:</strong> Netflix.</p>
                     </td>
                     <td>
                         <h2>Notas</h2>
@@ -130,6 +168,8 @@
                         <a href="https://www.youtube.com/watch?v=SgZI655GgHk" target="_blank">
                             <img src="./img/viajem.jpg" alt="" class="i">
                         </a>
+                        <p><strong>Gênero:</strong> Aventura, Fantasia, Drama</p>
+                        <p><strong>Disponível em:</strong> Netflix.</p>
                     </td>
                     <td>
                         <h2>Notas</h2>
@@ -162,6 +202,8 @@
                         <a href="https://www.youtube.com/watch?v=soQXM3XVvIU" target="_blank">
                             <img src="./img/nome.jpe" alt="" class="i">
                         </a>
+                        <p><strong>Gênero:</strong> Romance, Fantasia, Drama</p>
+                        <p><strong>Disponível em:</strong> HBO Max.</p>
                     </td>
                     <td>
                         <h2>Notas</h2>
@@ -194,6 +236,8 @@
                         <a href="https://www.youtube.com/watch?v=0zKXoazRf-Y" target="_blank">
                             <img src="./img/akira2.jpg" alt="" class="i">
                         </a>
+                        <p><strong>Gênero:</strong> Ficção Científica, Ação, Distopia</p>
+                        <p><strong>Disponível em: </strong>Netflix e youtube.</p>
                     </td>
                     <td>
                         <h2>Notas</h2>
@@ -212,8 +256,8 @@
                 <tr>
                     <td>
                         <h2>Review pessoal</h2>
-                        <p>Akira é um clássico, né? Não tem como falar de anime sem mencionar esse filme. É uma história futurista cheia de ação, política, e umas viagens filosóficas que vão te deixar pensando por dias. A animação, pra época, é absurda de boa, e mesmo hoje impressiona. Mas não é um filme fácil de assistir. A trama é densa e, às vezes, você fica meio perdido no que tá rolando, mas é uma obra-prima pra quem curte ficção científica e distopias.
-
+                        <p>Akira é um clássico, né? Não tem como falar de anime sem mencionar esse filme. É uma história futurista cheia de ação,
+                            política, e umas viagens filosóficas que vão te deixar pensando por dias. A animação, pra época, é absurda de boa, e mesmo hoje impressiona. Mas não é um filme fácil de assistir. A trama é densa e, às vezes, você fica meio perdido no que tá rolando, mas é uma obra-prima pra quem curte ficção científica e distopias.
                             Ponto alto: Inovador, com temas pesados e uma estética que influenciou gerações.</p>
                     </td>    
                 </tr>
@@ -226,6 +270,8 @@
                         <a href="https://www.youtube.com/watch?v=hIitZdhzPiQ&t=23s" target="_blank">
                             <img src="./img/tempo.jpg" alt="" class="i">
                         </a>
+                        <p><strong>Gênero:</strong> Romance, Fantasia, Drama</p>
+                        <p><strong>Disponível em</strong>: HBO Max e  Amazon Prime Video.</p>
                     </td>
                     <td>
                         <h2>Notas</h2>
@@ -258,6 +304,8 @@
                         <a href="https://www.youtube.com/watch?v=nfK6UgLra7g" target="_blank">
                             <img src="./img/anime-a-voz-do-silêncio.jpeg" alt="" class="i">
                         </a>
+                        <p><strong>Gênero:</strong> Drama</p>
+                        <p><strong>Disponível em:</strong>YouTube</p>
                     </td>
                     <td>
                         <h2>Notas</h2>
@@ -276,7 +324,7 @@
                 <tr>
                     <td>
                         <h2>Review pessoal</h2>
-                        <p>LKoe no Katachi é pesado. É uma história sobre bullying, arrependimento e tentar se redimir depois de errar feio. O protagonista, Shoya, aprontou com uma menina surda na escola, e agora tenta consertar as coisas. O filme é cheio de momentos que te fazem pensar na vida e em como tratamos os outros. É emocionante e doloroso, mas necessário. No final, você sai mexido.
+                        <p>Koe no Katachi é pesado. É uma história sobre bullying, arrependimento e tentar se redimir depois de errar feio. O protagonista, Shoya, aprontou com uma menina surda na escola, e agora tenta consertar as coisas. O filme é cheio de momentos que te fazem pensar na vida e em como tratamos os outros. É emocionante e doloroso, mas necessário. No final, você sai mexido.
 
                         Ponto alto: Mostra com muita sinceridade os efeitos do bullying e a importância do perdão.</p>
                     </td>    
@@ -289,6 +337,8 @@
                         <a href="https://www.youtube.com/watch?v=4cajBzu_N-g" target="_blank">
                             <img src="./img/suzume-no-tojimari-japanese-movie-poster.jpg" alt="" class="i">
                         </a>
+                        <P><strong>Gênero: </strong>Aventura, Fantasia, Drama</P>
+                        <P><strong>Disponível em: </strong>Netflix e Crunchyroll</P>
                     </td>
                     <td>
                         <h2>Notas</h2>
@@ -321,6 +371,8 @@
                     <a href="https://www.youtube.com/watch?v=CsR3KVgBzSM" target="_blank">                    
                         <img src="./img/ponyo.webp" alt="" class="i">
                     </a>
+                    <p><strong>Gênero:</strong>  Fantasia, Família, Aventura</p>
+                    <p><strong>Disponível em:</strong> Netflix.</p>
                 </td>
                 <td>
                     <h2>Notas</h2>

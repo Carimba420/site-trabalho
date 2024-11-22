@@ -9,63 +9,80 @@
 </head>
 <body>   
     <header>
-        <img src="./img/J&J (1).png" alt="Logo">
         <nav>
-            <ul class="menu">
-                <li><a href="#">Ficção</a></li>
-                <li><a href="#">Ação</a></li>
-                <li><a href="#">Comédia</a></li>
-                <li><a href="index2.html">Animação</a></li>
-                <li class="login"><a href="login.html">Login</a></li>
-            </ul>
+            <div class="logo">
+                <img src="./img/J&J (1).png" alt="Logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Ficção</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Ação</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Comédia</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-link">Animação+</a>
+                        <div class="dropdown-menu">
+                            <a href="index3.html" class="nav-link">Atemporais</a>
+                            <a href="index4.html" class="nav-link">Anime</a>
+                            <a href="index5.html" class="nav-link">Stopmotion</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>               
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+            </div>               
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Ficção</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Ação</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Comédia</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-link">Animação+</a>
+                    <div class="dropdown-menu">
+                        <a href="index3.html" class="nav-link">Atemporais</a>
+                        <a href="index4.html" class="nav-link">Anime</a>
+                        <a href="index5.html" class="nav-link">Stopmotion</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
     </header>  
     <main>
-        <div></div>
         <h1>Filmes em destaque</h1>
-        <div></div>
         
-            <table>        
-                <tr> 
-                    <td rowspan="3">
+            <section class="destaque">
+                <div class="imagem-destaque">
+                    <a href="">
+                        <img src="./img/imagem1.jpg" alt="Filme 1">
+                    </a>
+                </div> 
+                <div class="imagens-secundarias">
+                    <div class="imagem-secundaria">
                         <a href="">
-                            <img src="./img/imagem1.jpg" alt="Filme 1">
+                            <img src="img/tropa.png" alt="Filme 2">
                         </a>
-                    </td>
-                    <td class="imagem">
+                    </div>
+                    <div class="imagem-secundaria">
                         <a href="">
-                            <img src="./img/tropa.png" alt="Filme Tropa">
+                            <img src="img/O_auto_da_compadecida.jpg" alt="Filme 3">
                         </a>
-                    </td>  
-                </tr>
-                <tr>
-                    <td class="imagem">
-                        <a href="">
-                            <img src="./img/O_auto_da_compadecida.jpg" alt="O Auto da Compadecida">
-                        </a>
-                    </td>  
-                </tr>
-                <tr>
-                    <td class="imagem">
+                    </div>
+                    <div class="imagem-secundaria">
                         <a href="index3.html#rei_leao">
-                            <img src="./img/rei_leao (1).png" alt="Rei Leão">
+                            <img src="img/rei_leao (1).png" alt="Filme 4">
                         </a>
-                    </td>    
-                </tr>
-            </table>
-            <center>
-            <table id="table">
-                <tr>
-                    <td><a href=""><img src="./img/tropa.png" alt="Filme Tropa"></a></td>
-                    <td></td>
-                    <td><a href=""><img src="./img/O_auto_da_compadecida.jpg" alt="O Auto da Compadecida"></a></td>
-                    <td></td>
-                    <td><a href=""><img src="./img/rei_leao (1).png" alt="Rei Leão"></a></td>
-                </tr>
-            </table>
-        </center>
+                    </div>
+                </div>
+            </section>
+        <br><br>
         <h1>Filmes recomendados</h1>
-        <section>
+        <section class="rolagem">
             <div><a href="index4.html#fate"><img src="./img/CINZA-PURO-185x275-1.jpg" alt=""></a></div>
             <div><a href="index3.html#dragão"><img src="./img/CINZA-PURO-185x275-1.jpg" alt=""></a></div>
             <div><a href=""><img src="./img/CINZA-PURO-185x275-1.jpg" alt=""></a></div>
@@ -75,8 +92,7 @@
             <div><a href=""><img src="./img/CINZA-PURO-185x275-1.jpg" alt=""></a></div>
             <div><a href=""><img src="./img/CINZA-PURO-185x275-1.jpg" alt=""></a></div>
             <div><a href=""><img src="./img/CINZA-PURO-185x275-1.jpg" alt=""></a></div>
-            <div><a href=""><img src="./img/CINZA-PURO-185x275-1.jpg" alt=""></a></div>
-            <script src="./script/script.js"></script>
+            <div><a href=""><img src="./img/CINZA-PURO-185x275-1.jpg" alt=""></a></div>           
         </section>
     </main>    
     <footer>
@@ -84,5 +100,6 @@
         <p>© Copyright 2024 João Victor e Juan Riquelme</p>
         <p>Email de contato: trabalhosite48@gmail.com</p>
     </footer>
+    <script src="./script/script.js"></script>
 </body>
 </html>

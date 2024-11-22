@@ -6,60 +6,99 @@
 
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #000;
     color: #fff;
 }
 
-
 header {
     background-color: #242424;
-    padding: 20px 0;
+}
+nav {
+    padding: 1rem 6rem;
+    display: flex;
+    justify-content: space-between;   
+}
+.logo{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
-
-header img {
+.logo img{
     width: 50px;
     height: auto;
-    margin-left: 20px;
+    filter: contrast(200%);
 }
-
-nav {
-    margin-right: 20px;
-}
-
-
-.menu {
+.nav-list{
     display: flex;
+    align-items: center;
+    background-color: #383838;
+    border-radius: 5px;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
     list-style: none;
 }
-
-.menu li {
-    margin: 0 15px;
+.nav-item{
+    padding: 1rem;
 }
-
-.menu a {
-    color: #fff;
+.dropdown{
+    padding: 1rem;
+}
+.nav-link{
     text-decoration: none;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.55rem;
+    color:white;
+    font-weight: 400;
 }
-
-.menu a:hover {
-    color: #aaa;
+.dropdown-link{
+    text-decoration: none;
+    font-size: 1.55rem;
+    color:white;
+    font-weight: 400;
 }
-
-.menu {
-    background-color: #333;
-    padding: 10px 20px;
+.nav-link:hover{
+    background-color: #292929;
     border-radius: 5px;
-    margin-bottom: 20px;
 }
-
-.menu a:hover {
-    background-color: #555;
+.dropdown-menu{
+    border-radius: 5px;
+    margin-top: 0.85rem;
+    background-color: #383838;
+    display: none;
+    position: absolute;
+}
+.dropdown-menu a{
+    padding: 5px;
+    display: block;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+} 
+.login-button button{
+    border: none;
+    background-color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.login-button button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.login-button button:hover{
+    background-color: white;
+}
+.login-button button a:hover{
+    color:black;
+}
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
 }
 main {
     padding: 20px;
@@ -114,67 +153,75 @@ footer {
 footer img {
     width: 50px;
     margin-bottom: 10px;
+    filter: contrast(200%);
 }
 footer p {
     font-size: 16px;
 }
-@media screen and (max-width: 1120px) {
-    header {
-        background-color: #242424;
-        padding: 20px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    header img {
-        width: 50px;
-        height: auto;
-        margin-left: 20px;
-    }
-    
-    nav {
-        margin-left: auto; 
-        height: 100%;
-        max-width: 80%; 
-        display: flex;
-        justify-content: space-between;
-        overflow-y: hidden;
-        overflow-x: auto; 
-        -ms-overflow-style: none; 
-        scrollbar-width: none; 
-    }
-    
-    nav::-webkit-scrollbar {
-        display: none; 
-    }
-    
-    .menu {
-        list-style: none;
-        background-color: #333;
-        padding: 10px 20px;
-        display: flex;
-        border-radius: 5px;
-    }
-    
-    .menu li {
-        margin: 0 15px;
-        white-space: nowrap; 
-    }
-    
-    .menu a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-    
-    .menu a:hover {
-        background-color: #555;
-        border-radius: 5px;
-    }  
-}
 @media screen and (max-width: 790px) {
+    av{
+        padding: 1rem 4rem;
+    }
+    .nav-list{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+        margin-top: 8px;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1.2rem;
+    }
+    .mobile-menu nav ul li{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+    .mobile-menu .dropdown-menu {
+        display: none;
+        background-color: #383838;
+        position: relative;
+        border-radius: 5px;
+    }
+    .mobile-menu .dropdown-menu a {
+        display: block;
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }    
+    .mobile-menu .dropdown-menu a:hover {
+        background-color: #292929;
+        border-radius: 5px;
+    }
+    .nav-link:hover{
+        background-color: #5f5f5f;
+        border-radius: 5px;
+    }
+    .nav-link:hover{
+        background-color: #5f5f5f;
+        border-radius: 5px;
+    }
     table{
         background-color: #333;
         border-radius: 8px; 
