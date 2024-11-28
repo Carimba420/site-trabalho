@@ -102,6 +102,8 @@ nav {
 }
 main {
     padding: 20px;
+    margin-top: 3.5rem;
+    margin-bottom: 5rem;
 }
 main h1 {
     font-size: 36px;
@@ -115,13 +117,10 @@ table{
 }
 table tr td {
     padding: 8px;
-    border-radius: 5px;
     color: #ffffff;
     font-size: 26px;
 }
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+.input {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -130,7 +129,7 @@ input[type="password"] {
     background-color: #222;
     color: #fff;
 }
-form table tr td button{
+form button{
     background-color: rgb(0, 0, 0);
     border: none;
     padding: 15px;
@@ -140,26 +139,35 @@ form table tr td button{
     font-size: 15px;
     cursor: pointer;
 }
-form table tr td button:hover{
+form button:hover{
     background-color: rgb(255, 255, 255);
     color: black;
 }
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #242424;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    padding: 20px;
+    margin-top: 2.5rem;
+}
+footer div{
+    margin-left: 1rem;
+}
+footer div h1{
+    margin-bottom: 1rem;
 }
 footer img {
-    width: 50px;
+    width: 70px;
     margin-bottom: 10px;
-    filter: contrast(200%);
+    filter: contrast(200%); 
+    margin-right: 0.8rem; 
 }
 footer p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 @media screen and (max-width: 790px) {
-    av{
+    nav{
         padding: 1rem 4rem;
     }
     .nav-list{

@@ -114,23 +114,22 @@ table {
     margin: 20px 0;
     border-radius: 8px;
 }
-table .i {
+.poster{
     width: 250px;
     height: auto;   
-    transition: 0.3s;
+    transition: 0.6s;
 }
-
-table img.i:hover {
+.poster:hover {
     transform: scale(1.08);
     border-radius: 8px;
 }
 table h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #ffffff;
     margin: 10px 0;
 }
 table p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6;
     margin: 5px 0;
     color: #ffffff;
@@ -140,19 +139,27 @@ table td {
     vertical-align: top;
 }
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #242424;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    padding: 20px;
+    margin-top: 2.5rem;
 }
-
+footer div{
+    margin-left: 1rem;
+}
+footer div h1{
+    margin-bottom: 1rem;
+}
 footer img {
-    width: 50px;
+    width: 70px;
     margin-bottom: 10px;
-    filter: contrast(200%);
+    filter: contrast(200%); 
+    margin-right: 0.8rem; 
 }
 footer p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 @media screen and (max-width: 790px) {
     nav{
@@ -225,12 +232,12 @@ footer p {
     table tr td {
         display: flex; 
         flex-direction: column; 
-        align-items: center; 
+        align-items: center;
     }
 
-    table td img {
+    .poster{
         min-width: 265px;
         min-height: 375px; 
-        margin: 0 auto;
+        margin: 0;
     }
 }

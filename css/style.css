@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 * {
     margin: 0;
-    padding: 0;
 }
 body {
     font-family:'inter',sans-serif;
@@ -10,7 +9,6 @@ body {
 }
 header {
     background-color: #242424;
-    width: 100%
 }
 nav {
     padding: 1rem 6rem;
@@ -40,9 +38,11 @@ nav {
 }
 .nav-item{
     padding: 1rem;
+    list-style: none;
 }
 .dropdown{
     padding: 1rem;
+    list-style: none;
 }
 .nav-link{
     text-decoration: none;
@@ -114,32 +114,28 @@ main p {
 .destaque {
     display: flex; 
     gap: 20px; 
-    padding: 10px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    width: 80%;
+    margin-right: 10px;
 }
 .imagem-destaque img {
     width: 95%; 
     height: auto;
-    transition: 0.6s; 
+    transition: 0.3s; 
 }
-
 .imagens-secundarias {
     display: flex;
     flex-direction: column; 
-    gap:3rem; 
+    gap: 45px; 
 }
-
 .imagem-secundaria img {
-    max-width: 100%; 
+    width: 100%; 
     height: auto;
     transition: 0.3s; 
 }
-
 .imagem-secundaria img:hover {
-    transform: scale(1.15);
-    border-radius: 8px;  
+    transform: scale(1.1); 
+    border-radius: 8px; 
 }
 .imagem-destaque img:hover{
     transform: scale(1.02);
@@ -174,25 +170,31 @@ main p {
     border-radius: 15px;
 }
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #242424;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    width: 100%;
+    padding: 20px;
+    margin-top: 2.5rem;
 }
-
+footer div{
+    margin-left: 1rem;
+}
+footer div h1{
+    margin-bottom: 1rem;
+}
 footer img {
-    width: 50px;
+    width: 70px;
     margin-bottom: 10px;
-    filter: contrast(200%);
+    filter: contrast(200%); 
+    margin-right: 0.8rem; 
 }
-
 footer p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 @media screen and (max-width: 730px) {
     nav{
-        padding: 1rem  4rem;
+        padding: 1rem 4rem;
     }
     .nav-list{
         display: none;
@@ -259,7 +261,8 @@ footer p {
         flex-direction: column; 
         align-items: center;
         width: 100%; 
-        gap: 10px; 
+        gap: 10px;
+        padding: 10px; 
     }
     .imagem-destaque {
         width: 90%; 
@@ -270,10 +273,6 @@ footer p {
         flex-wrap: wrap; 
         gap: 10px; 
         justify-content: center;
-    }
-    .imagem-secundaria img {
-        width: auto; 
-        height: auto;
     }
     .rolagem{
         min-width: 90%;
