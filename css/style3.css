@@ -138,6 +138,24 @@ table td {
     padding: 15px;
     vertical-align: top;
 }
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #383838;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.back-to-top:hover {
+    transition: 0.3s;
+    background-color: #292929;
+}
 footer {
     display: flex;
     align-items: center;
@@ -239,5 +257,10 @@ footer p {
         min-width: 265px;
         min-height: 375px; 
         margin: 0;
+    }
+    .back-to-top{
+        bottom: 10x;
+        right: 10px;
+        font-size: 1.25rem;
     }
 }
