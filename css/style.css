@@ -113,11 +113,11 @@ main p {
     font-size: 1rem;
 }
 .destaque {
-    display: flex; 
-    gap: 20px; 
-    padding: 20px;
-    width: 80%;
-    margin-right: 10px;
+    display: none; 
+}
+table{
+    max-width: 1000px;
+    margin-bottom: 2rem;
 }
 .imagem-destaque img {
     width: 95%; 
@@ -130,8 +130,8 @@ main p {
     gap: 45px; 
 }
 .imagem-secundaria img {
-    width: 100%; 
-    height: auto;
+    max-width: 120px; 
+    max-height: 170px;
     transition: 0.3s; 
 }
 .imagem-secundaria img:hover {
@@ -142,12 +142,16 @@ main p {
     transform: scale(1.02);
     border-radius: 10px;
 }
-section{
+article.rolagem_pc{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     justify-content: space-between;
+    width: 80%;
+}
+.rolagem_mobile{
+    display: none;
 }
 .Botao_de_rolagem {
     background-color: #ddd;
@@ -181,7 +185,7 @@ section{
     display: none;
 }
 .rolagem{
-    max-width: 76.5%;
+    max-width: 100%;
     background: #000;
     margin: 2rem auto 0 auto;
     border: solid 4px rgb(0, 0, 0);
@@ -196,8 +200,8 @@ section{
     display: none;
 }
 .rolagem div img{
-    max-width: 265px;
-    max-height: 375px;
+    width: 265px;
+    height: 375px;
     background-color: transparent;
     border: 2px;
     margin-left: 2rem;
@@ -232,7 +236,7 @@ footer img {
 footer p {
     font-size: 1rem;
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 800px) {
     nav{
         padding: 1rem 4rem;
     }
@@ -297,6 +301,9 @@ footer p {
         font-size: 1.5rem;
         margin-bottom: 10px;
     }
+    table{
+        display: none;
+    }
     .destaque {
         display: flex;
         flex-direction: column; 
@@ -315,7 +322,11 @@ footer p {
         gap: 10px; 
         justify-content: center;
     }
-    section{
+    article.rolagem_pc{
+        display: none;
+    }
+    article.rolagem_mobile{
+        display: block;
         display: flex;
         align-items: center;
         justify-content: center;
